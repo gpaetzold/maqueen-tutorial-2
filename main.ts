@@ -10,6 +10,18 @@ basic.forever(function () {
         R += 1
         B += -1
         strip.showColor(neopixel.rgb(R, G, B))
-        basic.pause(100)
+        basic.pause(1)
+    }
+    for (let index = 0; index < 255; index++) {
+        G += 1
+        R += -1
+        strip.showColor(neopixel.rgb(R, G, B))
+        basic.pause(1)
+    }
+    for (let index = 0; index < 255; index++) {
+        B += 1
+        G += -1
+        strip.showColor(neopixel.rgb(R, G, B))
+        basic.pause(1)
     }
 })
