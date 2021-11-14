@@ -1,8 +1,11 @@
-let strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
-let R = 0
-let G = 0
 let B = 0
+let G = 0
+let R = 0
+let strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 basic.forever(function () {
+    R = 0
+    G = 0
+    B = 0
     for (let index = 0; index < 255; index++) {
         R += 1
         B += -1
